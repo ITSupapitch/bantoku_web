@@ -1,22 +1,6 @@
-// slideshow Part
-var myIndex = 0;
-carousel();
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 4000); // Change image every 2 seconds
-}
-
 // text animation part
 // function([string1, string2],target id,[color1,color2])    
- consoleText([' ALL MENUS', 'SERVE YOU', 'WITH LOVE '], 'text',['Sienna','Sienna','Sienna']);
+ consoleText([' SPECIAL PROMOTION', ' FOR SPECIAL PERSON '], 'text',['Sienna','Sienna']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];

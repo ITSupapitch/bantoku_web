@@ -10,25 +10,34 @@
 	<link rel="stylesheet" type="text/css" href="menu.css">
 </head>
 <body>
-<section>
-<header id="navbar_menu" class="bg-ci2 ">
-	<ul class="padding-xl-hzt">
-		<a href="menu.html">
-			<img src="pic/logo.png" width="200px" height="100px" class="logo t-left"></a>
-		<a href="#"><strong class="navlist padding-l">WELCOME</strong></a>
-		<a href="#"><strong class="navlist padding-l">OUR STORY</strong></a>
-		<a href="#"><strong class="navlist padding-l">MENU</strong></a>
-		<a href="#"><strong class="navlist padding-l">PROMOTION</strong></a>
-		<a href="#"><strong class="navlist padding-l">CONTACT</strong></a>
-		<a href="#"><i class="navlist fa fa-shopping-cart padding-l"></i></a>
-	</ul>
+
+<!-- navbar part -->
+<section id="sec1">
+	<header class="bg-ci2 ">
+    <nav class="navbar">
+        <div class="navbar-header">
+            <a class="navbar-brand"><img src="pic/logo.png" width="100px"></a>
+        </div>
+    </nav>
+    <div id='cssmenu' align="center">
+    <ul>
+       <li class='active'><a href='#'><span>WELCOME</span></a></li>
+       <li><a href='#'><span>OUR STORY</span></a></li>
+       <li><a href='#'><span>MENU</span></a></li>
+       <li><a href='#'><span>PROMOTION</span></a></li>
+       <li class='last'><a href='#'><span>CONTACT</span></a></li>
+       <a href="#"><i class="navlist fa fa-shopping-cart padding-l"></i></a>
+    </ul>
+    </div>
 </header>
 </section>
 
-<section class="cl-bg padding-vs-vtc">
+
+<section class="cl-bg padding-vs-vtc" id="sec2">
 	<div class="cont padding-xxl"></div>
 </section>
 
+<!-- slideshow part -->
 <div class="slideshow-container">
 <div class="mySlides fade">
   <img src="pic/welpic_menu.jpg" width="100%">
@@ -43,17 +52,19 @@
 </div>
 </div>
 
+<!-- topic part -->
 <br><br><br><br>
 <center><div class='console-container'>
 	<span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div></center>
 
-<section class="cl-bg padding-xs-vtc" id="sec2">
+<!-- menu list part -->
+<section class="cl-bg padding-xs-vtc" id="sec3">
  	<div class="cont padding-xxl">
  		<theboxes class="spacing-xl clip">
  			<box col="4">
  				<inner class="bg-white round">
  					<center><br><h2>เท็ดดี้บัน</h2></center>
- 					<img src="pic/teddy_bun.jpg" class="round padding-m" width="300" height="150" >
+ 					<img src="pic/teddy_bun.jpg" alt="teddy_bun" class="round padding-m" width="300" height="150" >
 					<div class="t-center">
 						<a href="#" class="btn size-l cl-ci1" id="click" target="_blank">Click!</a>
 						<a href="#" class="btn size-l fa fa-cart-plus bg-white cl-ci1" id="click" target="_blank"></a>
@@ -63,7 +74,7 @@
  			<box col="4">
  				<inner class="bg-white round">
  					<center><br><h2>ช็อคโกแลตครีมชีส</h2></center>
- 					<img src="pic/chocolate_creamcheese.jpg" class="round padding-m" width="300" height="90" >
+ 					<img src="pic/chocolate_creamcheese.jpg" alt="chocolate_creamcheese" class="round padding-m" width="300" height="90" >
 					<div class="t-center">
 						<a href="#" class="btn size-l bg-white cl-ci1" id="click" target="_blank">Click!</a>
 						<a href="#" class="btn size-l fa fa-cart-plus bg-white cl-ci1" id="click" target="_blank"></a>
@@ -73,7 +84,7 @@
  			<box col="4">
  				<inner class="bg-white round">
  					<center><br><h2>มัชรูมแบล็คเปเปอร์</h2></center>
- 					<img src="pic/mushroom_blackpepper.jpg" class="round padding-m" width="300" height="90" >
+ 					<img src="pic/mushroom_blackpepper.jpg" alt="mushroom_blackpepper" class="round padding-m" width="300" height="90" >
 					<div class="t-center">
 						<a href="#" class="btn size-l bg-white cl-ci1" id="click" target="_blank">Click!</a>
 						<a href="#" class="btn size-l fa fa-cart-plus bg-white cl-ci1" id="click" target="_blank"></a>
@@ -83,7 +94,7 @@
  			<box col="4">
  				<inner class="bg-white round">
  					<center><br><h2>คัสตาร์ดบัน</h2></center>
- 					<img src="pic/custard_bun.jpg" class="round padding-m" width="300" height="90" >
+ 					<img src="pic/custard_bun.jpg" alt="custard_bun" class="round padding-m" width="300" height="90" >
 					<div class="t-center">
 						<a href="#" class="btn size-l bg-white cl-ci1" id="click" target="_blank">Click!</a>
 						<a href="#" class="btn size-l fa fa-cart-plus bg-white cl-ci1" id="click" target="_blank"></a>
@@ -93,7 +104,7 @@
  			<box col="4">
  				<inner class="bg-white round">
  					<center><br><h2>ร็อคกี้มิลค์</h2></center>
- 					<img src="pic/rocky_milk.jpg" class="round padding-m" width="300" height="90" >
+ 					<img src="pic/rocky_milk.jpg" alt="rocky_milk" class="round padding-m" width="300" height="90" >
 					<div class="t-center">
 						<a href="#" class="btn size-l bg-white cl-ci1" id="click" target="_blank">Click!</a>
 						<a href="#" class="btn size-l fa fa-cart-plus bg-white cl-ci1" id="click" target="_blank"></a>
@@ -103,7 +114,7 @@
  			<box col="4">
  				<inner class="bg-white round">
  					<center><br><h2>เคอร์รี่ชิคเก้น</h2></center>
- 					<img src="pic/curry_chicken.jpg" class="round padding-m" width="300" height="90" >
+ 					<img src="pic/curry_chicken.jpg" alt="curry_chicken" class="round padding-m" width="300" height="90" >
 					<div class="t-center">
 						<a href="#" class="btn size-l bg-white cl-ci1" id="click" target="_blank">Click!</a>
 						<a href="#" class="btn size-l fa fa-cart-plus bg-white cl-ci1" id="click" target="_blank"></a>
@@ -113,7 +124,7 @@
  			<box col="4">
  				<inner class="bg-white round">
  					<center><br><h2>ชีสโบ้ท</h2></center>
- 					<img src="pic/cheese_boat.jpg" class="round padding-m" width="300" height="90" >
+ 					<img src="pic/cheese_boat.jpg" alt="cheese_boat" class="round padding-m" width="300" height="90" >
 					<div class="t-center" >
 						<a href="#" class="btn size-l bg-white cl-ci1" id="click" target="_blank">Click!</a>
 						<a href="#" class="btn size-l fa fa-cart-plus bg-white cl-ci1" id="click" target="_blank"></a>
@@ -123,7 +134,7 @@
  			<box col="4">
  				<inner class="bg-white round">
  					<center><br><h2>อันปัน</h2></center>
- 					<img src="pic/anpan.jpg" class="round padding-m" width="300" height="90" >
+ 					<img src="pic/anpan.jpg" alt="anpan" class="round padding-m" width="300" height="90" >
 					<div class="t-center">
 						<a href="#" class="btn size-l bg-white cl-ci1" id="click" target="_blank">Click!</a>
 						<a href="#" class="btn size-l fa fa-cart-plus bg-white cl-ci1" id="click" target="_blank"></a>
@@ -133,7 +144,7 @@
  			<box col="4">
  				<inner class="bg-white round">
  					<center><br><h2>นิวเบค่อนชีส</h2></center>
- 					<img src="pic/newbacon_cheese.jpg" class="round padding-m" width="300" height="90" >
+ 					<img src="pic/newbacon_cheese.jpg" alt="newbacon_cheese" class="round padding-m" width="300" height="90" >
 					<div class="t-center">
 						<a href="#" class="btn size-l bg-white cl-ci1" id="click" target="_blank">Click!</a>
 						<a href="#" class="btn size-l fa fa-cart-plus bg-white cl-ci1" id="click" target="_blank"></a>
@@ -144,7 +155,7 @@
  			<box col="4">
  				<inner class="bg-white round">
  					<center><br><h2>ขนมปังไข่ดาว</h2></center>
- 					<img src="pic/friedegg_bread.jpg" class="round padding-m" width="300" height="90" >
+ 					<img src="pic/friedegg_bread.jpg" alt="friedegg_bread" class="round padding-m" width="300" height="90" >
 					<div class="t-center">
 						<a href="#" class="btn size-l bg-white cl-ci1" id="click" target="_blank">Click!</a>
 						<a href="#" class="btn size-l fa fa-cart-plus bg-white cl-ci1" id="click" target="_blank"></a>
@@ -155,7 +166,7 @@
  			<box col="4">
  				<inner class="bg-white round">
  					<center><br><h2>ถั่วแดงอัลมอนด์</h2></center>
- 					<img src="pic/almond_redbean.jpg" class="round padding-m" width="300" height="90" >
+ 					<img src="pic/almond_redbean.jpg" alt="almond_redbean" class="round padding-m" width="300" height="90" >
 					<div class="t-center">
 						<a href="#" class="btn size-l bg-white cl-ci1" id="click" target="_blank">Click!</a>
 						<a href="#" class="btn size-l fa fa-cart-plus bg-white cl-ci1" id="click" target="_blank"></a>
@@ -166,7 +177,7 @@
  			<box col="4">
  				<inner class="bg-white round">
  					<center><br><h2>สตรอเบอร์รี่ครัวซองต์</h2></center>
- 					<img src="pic/strawberry_croissant.jpg" class="round padding-m" width="300" height="90" >
+ 					<img src="pic/strawberry_croissant.jpg" alt="strawberry_croissant" class="round padding-m" width="300" height="90" >
 					<div class="t-center">
 						<a href="#" class="btn size-l bg-white cl-ci1" id="click" target="_blank">Click!</a>
 						<a href="#" class="btn size-l fa fa-cart-plus bg-white cl-ci1" id="click" target="_blank"></a>
@@ -177,7 +188,7 @@
  			<box col="4">
  				<inner class="bg-white round">
  					<center><br><h2>ซัมเมอร์เบอร์รี่</h2></center>
- 					<img src="pic/summer_berries.jpg" class="round padding-m" width="300" height="90" >
+ 					<img src="pic/summer_berries.jpg" alt="summer_berries" class="round padding-m" width="300" height="90" >
 					<div class="t-center">
 						<a href="#" class="btn size-l bg-white cl-ci1" id="click" target="_blank">Click!</a>
 						<a href="#" class="btn size-l fa fa-cart-plus bg-white cl-ci1" id="click" target="_blank"></a>
@@ -188,7 +199,7 @@
  			<box col="4">
  				<inner class="bg-white round">
  					<center><br><h2>พัมพ์กิน ซันฟลาวเวอร์</h2></center>
- 					<img src="pic/pumpkin_sunflower.jpg" class="round padding-m" width="300" height="90" >
+ 					<img src="pic/pumpkin_sunflower.jpg" alt="pumpkin_sunflower" class="round padding-m" width="300" height="90" >
 					<div class="t-center">
 						<a href="#" class="btn size-l bg-white cl-ci1" id="click" target="_blank">Click!</a>
 						<a href="#" class="btn size-l fa fa-cart-plus bg-white cl-ci1" id="click" target="_blank"></a>
@@ -199,7 +210,7 @@
  			<box col="4">
  				<inner class="bg-white round">
  					<center><br><h2>ฟูจิสเวิร์ล</h2></center>
- 					<img src="pic/fuji_swirl.jpg" class="round padding-m" width="300" height="90" >
+ 					<img src="pic/fuji_swirl.jpg" alt="fuji_swirl" class="round padding-m" width="300" height="90" >
 					<div class="t-center">
 						<a href="#" class="btn size-l bg-white cl-ci1" id="click" target="_blank">Click!</a>
 						<a href="#" class="btn size-l fa fa-cart-plus bg-white cl-ci1" id="click" target="_blank"></a>
@@ -211,7 +222,7 @@
  	</div>
  </section>
 <!-- footer part -->
- <section>
+ <section id="sec4">
  	<footer id="footer" class="bg-ci2 t-center">
  		<br><br><p>Tel : +66(0) 2365 6999 Ext : 3462
 		<br>Mobile : +66(O)61-624-9799</p>

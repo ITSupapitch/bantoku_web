@@ -141,7 +141,7 @@ header{
 /*Parallax Part*/
 .parallax {
     /* The image used */
-    background-image: url("picture/home.jpg");
+    background-image: url("pic/home.jpg");
 
     /* Set a specific height */
     min-height: 1000px; 

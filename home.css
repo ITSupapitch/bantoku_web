@@ -167,6 +167,33 @@ header{
   color: #fff;
 }
 
+.pic {
+  margin-top: 50px;
+}
+.pic:hover{
+  border: 3px solid #ffe9c2;
+}
+.pic_menu {
+  border: 3px solid #6a3e19; 
+}
+.pic_menu:hover{
+  opacity: 0.8;
+  border: 3px solid #ffe9c2;
+
+}
+
+.button {
+  background-color: #624329;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #ccc;
+  color: #ffe7d3;
+}
+.button:hover {
+  background-color: #eeb60b;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #ccc;
+  color: #fff;
+}
 
 /*Footer Part*/
 .social{

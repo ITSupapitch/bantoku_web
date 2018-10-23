@@ -167,9 +167,51 @@ header{
   color: #fff;
 }
 
+.box_cart {
+  align-content: left;
+  width: 70%;
+  height: 150px;
+  padding: 10px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  border: 3px solid #624329;
+  border-radius: 10px;
+  background-color: #f6e6d4;
+}
+
+.txt_cart {
+  width: 20%;
+  height: 60px;
+  padding: 10px;
+  margin-top: 20px;
+  size: 20px;
+  color: #624329;
+  display: inline-block;
+}
+
+.button_cart {
+  background-color: #624329;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #ccc;
+  color: #ffe7d3;
+}
+.button_cart:hover {
+  background-color: #eeb60b;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #ccc;
+  color: #fff;
+}
+
+#pic_cart {
+  width: 185px;
+  border-radius: 10px;
+}
+
+
+
 
 /*Footer Part*/
-.social{
+.social {
     display: inline;
 }
 footer{

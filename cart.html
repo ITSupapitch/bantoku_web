@@ -10,28 +10,46 @@
     <link href="https://fonts.googleapis.com/css?family=Itim|Fredoka+One" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="cart.css">
 
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/one-page-wonder.min.css" rel="stylesheet">
+
 </head>
 <body>
 
 <!-- build navbar -->
-<header class="bg-ci2 ">
-    <nav class="navbar">
-        <div class="navbar-header">
-            <a class="navbar-brand"><img src="pic/logo1.png" width="100px"></a>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="pic/logo.png" width="100px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">WELCOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="history.html">OUR STORY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">MENU</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="promotion.html">PROMOTION</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html"><i class="navlist fa fa-shopping-cart"></i></a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
-    <div id='cssmenu' align="center">
-    <ul>
-       <li class='active'><a href="home.html"'><span>WELCOME</span></a></li>
-       <li><a href="history.html"><span>OUR STORY</span></a></li>
-       <li><a href="menu.html"><span>MENU</span></a></li>
-       <li><a href="promotion.html"><span>PROMOTION</span></a></li>
-       <li class='last'><a href="contact.html"><span>CONTACT</span></a></li>
-       <a href="cart.html"><i class="navlist fa fa-shopping-cart padding-l"></i></a>
-    </ul>
-    </div>
-</header>
 
 <!-- build parallax -->
     <div class="parallax"></div>
@@ -78,8 +96,8 @@
     </footer>
  </section>
 
-    <!-- js for navbar -->
-    <script type="text/javascript" src="bootstrap/js/jquery-1.10.2.js"></script>
-    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

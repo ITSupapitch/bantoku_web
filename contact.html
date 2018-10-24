@@ -11,7 +11,10 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" type="text/css" href="contact.css">
 
-
+<!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/one-page-wonder.min.css" rel="stylesheet">
 
 
 <!-- link map -->
@@ -26,25 +29,38 @@
 </head>
 <body>
 
+
 <!-- build navbar -->
-<div class="topnav" id="myTopnav">
-  <theboxes>
-    <box col="6">
-        <a href="home.html"><img src="pic/logo.png" width="100px"></a>
-    </box>
-    <div align="right">
-    <box col="5">
-       <a href="home.html"><div style="height: 80px;">WELCOME</div></a>
-       <a href="history.html"><div style="height: 80px;">OUR STORY</div></a>
-       <a href="menu.html"><div style="height: 80px;">MENU</div></a>
-       <a href="promotion.html"><div style="height: 80px;">PROMOTION</div></a>
-       <a href="contact.html"><div style="height: 80px;">CONTACT</div></a>
-       <a href="cart.html"><div style="height: 80px;"><i class="fa fa-shopping-cart"></div></i></a>
-       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-       <i class="fa fa-bars"></i></a>
-    </box></div>
-  </theboxes>
-</div>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="pic/logo.png" width="100px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">WELCOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="history.html">OUR STORY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">MENU</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="promotion.html">PROMOTION</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html"><i class="navlist fa fa-shopping-cart"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
 <!-- <header class="bg-ci2 "> -->
 <!--     <nav class="navbar">
@@ -136,9 +152,9 @@
     </footer>
  </section>
 
-    <!-- js for navbar -->
-    <script type="text/javascript" src="bootstrap/js/jquery-1.10.2.js"></script>
-    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- js for map -->
     <script type="text/javascript" src="contact.js"></script>

@@ -13,23 +13,6 @@
   object-fit: cover;
 }
 
-/*Parallax Part*/
-.parallax {
-    /* The image used */
-    background-image: url("pic/anpan.jpg");
-    position: relative;
-
-    /* Set a specific height */
-    min-height: 0px; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
 /*Midle detail Part*/
 .box_scroll {
     position: relative;

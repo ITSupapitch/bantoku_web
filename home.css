@@ -78,7 +78,8 @@
 }
 
 .txt_our {
-  padding: 3em;
+  margin-top: 20px;
+  padding: 4em;
   color: #fff;
 }
 
@@ -125,6 +126,13 @@
   width: 50%;
 }
 
+#flix_pic{
+  background-size: cover;
+  width: 100%;
+  padding-top: 66%;
+  background-position: center;
+}
+
 .image {
   display: block;
   width: 100%;
@@ -141,11 +149,11 @@
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #F2994A;
+  background-color: #775336;
 }
 
 .container:hover .overlay {
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .text {

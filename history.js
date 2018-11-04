@@ -1,6 +1,6 @@
 // text animation part
 // function([string1, string2],target id,[color1,color2])    
- consoleText(['WELCOME', 'NICE TO MEET U'], 'text',['Sienna','Sienna']);
+ consoleText(['OUR STORY', 'NICE TO MEET YOU'], 'text',['Sienna','Sienna']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];

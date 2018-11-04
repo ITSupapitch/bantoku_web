@@ -24,10 +24,31 @@
 }
 
 /*content part*/
+
+img{
+  display: inline-block;
+}
+
 strong{
   font-family: 'Itim', cursive;
   font-size: 20px;
   color: #765234;
+  display: inline-block;
+  background-color: #fff1d7;
+  padding: 20px;
+  text-align: center;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+#story_1{
+  position: absolute;
+  top: 25px;
+}
+
+#story_2{
+  position: relative;
+  top: 108px;
 }
 
 /*Footer Part*/

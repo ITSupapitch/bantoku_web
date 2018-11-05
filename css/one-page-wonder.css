@@ -20,7 +20,7 @@ body {
 .navbar-custom {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: rgba(255,233,194,.7);
+  background-color: rgba(255,233,194,.9);
 }
 
 .navbar-custom .navbar-brand {

@@ -6,11 +6,12 @@
 }
 
 
-
 #welpic{
   width: 100%;
   height: 500px;
   object-fit: cover;
+  -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+    filter: blur(2px);
 }
 
 /*Midle detail Part*/
@@ -18,7 +19,7 @@
     position: relative;
     font-family: 'Fredoka One', cursive;
     height: auto;
-    background-color: #bd8e62;
+    background-color: #fff1d7;
     padding: 0px;
 }
 
@@ -38,96 +39,9 @@
 }
 
 
-/*Map Part*/
-/*
-html * {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-*/
-*, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-/* -------------------------------- 
-
-Main components 
-
--------------------------------- */
-
-#google-container {
-  position: relative;
-  width: 100%;
-  height: 50px;
-  background-color: #e7eaf0;
-}
-@media only screen and (min-width: 768px) {
-  #google-container {
-    height: 300px;
-  }
-}
-@media only screen and (min-width: 1170px) {
-  #google-container {
-    height: 300px;
-  }
-}
-
-#cd-google-map {
-  position: relative;
-}
-#cd-google-map address {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  padding: 1em 1em;
-  background-color: rgba(211, 104, 104, 0.9);
-  color: #ffffff;
-  font-size: 13px;
-  font-size: 0.8125rem;
-}
-@media only screen and (min-width: 768px) {
-  #cd-google-map address {
-    font-size: 15px;
-    font-size: 0.9375rem;
-    text-align: center;
-  }
-}
-
-#cd-zoom-in, #cd-zoom-out {
-  height: 32px;
-  width: 32px;
-  cursor: pointer;
-  margin-left: 10px;
-  background-color: rgba(211, 104, 104, 0.9);
-  background-repeat: no-repeat;
-  background-size: 32px 64px;
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-controller.svg");
-}
-.no-touch #cd-zoom-in:hover, .no-touch #cd-zoom-out:hover {
-  background-color: #d36868;
-}
-@media only screen and (min-width: 768px) {
-  #cd-zoom-in, #cd-zoom-out {
-    margin-left: 50px;
-  }
-}
-
-#cd-zoom-in {
-  background-position: 50% 0;
-  margin-top: 10px;
-  margin-bottom: 1px;
-}
-@media only screen and (min-width: 768px) {
-  #cd-zoom-in {
-    margin-top: 50px;
-  }
-}
-
-#cd-zoom-out {
-  background-position: 50% -32px;
+#map{
+  padding: 50px;
+  align-content: center;
 }
 
 /*Footer Part*/

@@ -10,7 +10,7 @@
     background-image: url("pic/home.jpg");
 
     /* Set a specific height */
-    min-height: 1000px; 
+    min-height: 500px; 
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -22,27 +22,29 @@
 
 /*Midle detail Part*/
 .box_scroll {
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Itim', cursive;
     height: auto;
-    background-color: #bd8e62;
+    background-color: #fff1d7;
     padding: 0px;
 }
+
 
 .txt_our {
   padding: 3em;
   color: #fff;
 }
 
+
 .box_cart {
   align-content: left;
   width: 70%;
   height: 150px;
-  padding: 10px;
+  padding: 30px;
   margin-top: 50px;
   margin-bottom: 30px;
   border: 3px solid #624329;
   border-radius: 10px;
-  background-color: #f6e6d4;
+  background-color: #fff;
 }
 
 .txt_cart {
@@ -50,22 +52,8 @@
   height: 60px;
   padding: 10px;
   margin-top: 20px;
-  size: 20px;
   color: #624329;
   display: inline-block;
-}
-
-.button_cart {
-  background-color: #624329;
-  border-radius: 5px;
-  box-shadow: 2px 2px 2px #ccc;
-  color: #ffe7d3;
-}
-.button_cart:hover {
-  background-color: #eeb60b;
-  border-radius: 5px;
-  box-shadow: 2px 2px 2px #ccc;
-  color: #fff;
 }
 
 #pic_cart {
@@ -74,6 +62,134 @@
 }
 
 
+/*Popuo Part*/
+/*.container {
+  background-color: #9191E9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 200px;
+}*/
+
+.button {
+  font-weight: bold;
+  text-decoration: none;
+  font-size: .975rem;
+  text-transform: uppercase;
+  display: inline-block;
+  border-radius: 1.5rem;
+  background-color: #3c280e;
+  color: #fff;
+  padding: 1rem 2rem;
+  border: 2px solid #fff;
+}
+.button:hover { 
+  background:  #fff;
+  color: #3c280e;
+  border: 2px solid #3c280e;
+  text-decoration: none;
+}
+
+.popup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100vw;
+  height: 87vh;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 10;
+  visibility: hidden;
+  opacity: 0;
+  overflow: hiden;
+  transition: .64s ease-in-out;
+}
+.popup-inner {
+  position: relative;
+  bottom: -100vw;
+  right: -100vh;
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+  max-height: 600px;
+  width: 60%;
+  height: 80%;
+  background-color: #fff;
+  -webkit-transform: rotate(32deg);
+          transform: rotate(32deg);
+  transition: .64s ease-in-out;
+  border: 5px solid #3c280e;
+  border-radius: 1.5rem;
+}
+.popup__photo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 40%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 1.1rem;
+}
+.popup__photo img {
+  width: auto;
+  height: 100%;
+}
+.popup__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  height: 50%;
+  padding: 4rem;
+}
+.popup__text h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  color: #0A0A0A;
+}
+.popup__text p {
+  font-size: .875rem;
+  color: #686868;
+  line-height: 1.5;
+}
+.popup:target {
+  visibility: visible;
+  opacity: 1;
+}
+.popup:target .popup-inner {
+  bottom: 0;
+  right: 0;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+.popup__close {
+  position: absolute;
+  right: -1rem;
+  top: -1rem;
+  width: 3rem;
+  height: 3rem;
+  font-size: .875rem;
+  font-weight: 300;
+  border-radius: 100%;
+  background-color: #996633;
+  z-index: 4;
+  color: #3c280e;
+  line-height: 3rem;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  border: 5px solid #3c280e;
+}
+.popup__close:hover{
+  color: #fff;
+  background-color: red;
+}
+    
 
 
 /*Footer Part*/

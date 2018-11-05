@@ -1,5 +1,5 @@
 inner {
-  background-color: #ffbd6c;
+  background-color: #fff;
 }
 
 
@@ -40,17 +40,21 @@ h2{letter-spacing: 1px;}
 
 box{opacity: 0.9;}
 
-.btn_shop{
+
+.btn_shop {
     color: #3c280e;
     width: 85%;
     background: white;
     font-weight: bold;
+    border: 2px solid #3c280e;
     padding: .75em 1.5em;
+    font-size: 1.2rem;
+    margin: 4px 2px;
+    transition: 0.3s;
     display: inline-block;
     border-radius: 5px;
-    margin: 1em 0;
-    font-size: 1.2rem;
-    border: 2px solid #3c280e;
+    text-decoration: none;
+  cursor: pointer;
 }
 .btn_shop:hover{ 
   background:  #3c280e;

@@ -20,9 +20,9 @@ inner {
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 2.5s;
+/*  -webkit-animation-duration: 0s;*/
   animation-name: fade;
-  animation-duration: 2.5s;
+  animation-duration: 5s;
 }
 
 @-webkit-keyframes fade {

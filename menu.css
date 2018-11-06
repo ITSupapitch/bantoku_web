@@ -65,10 +65,14 @@ box{opacity: 0.9;}
 span.baht{
   position: relative;
   right: 20%;
+  font-weight: normal; 
+  color: brown;
 }
 span.price{
   position: relative;
   right: 40%;
+  font-weight: normal;
+  color: brown;
 }
 span.plus{
   position: relative;

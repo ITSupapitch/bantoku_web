@@ -1,3 +1,6 @@
+*{
+  transition: all .3s;
+}
 inner {
   background-color: #fff;
 }

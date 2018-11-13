@@ -1,3 +1,6 @@
+*{
+  transition: all .3s;
+}
 /*text animation*/
 div.console-container {
 font-family: 'Fredoka One', cursive;

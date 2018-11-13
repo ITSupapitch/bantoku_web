@@ -1,6 +1,5 @@
 /*text animation*/
-
-.console-container {
+div.console-container {
 font-family: 'Fredoka One', cursive;
   font-size:3em;
   text-align:center;
@@ -13,6 +12,17 @@ font-family: 'Fredoka One', cursive;
   right:0;
   margin:auto;
 }
+@media screen and (max-width: 1200px) {
+  div.console-container { 
+    font-size: 48px;
+  }
+}
+    
+@media screen and (max-width: 800px) {
+  div.console-container { 
+    font-size: 30px;
+  }
+}
 
 .console-underscore {
    display:inline-block;
@@ -22,12 +32,18 @@ font-family: 'Fredoka One', cursive;
 }
 
 /*content part*/
-h4{
-  letter-spacing: 1px;
+.content_promo{
+  font-family: 'Itim', cursive;
+  font-size: 26px;
+  letter-spacing: 0.6px;
   text-align: center;
   color: #765234;
 }
-
+@media screen and (max-width: 1200px) {
+  .content_promo { 
+    font-size: 20px;
+  }
+}
 
 
 /*Footer Part*/

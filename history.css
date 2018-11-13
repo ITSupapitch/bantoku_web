@@ -2,8 +2,8 @@
 
 /*text animation*/
 
-.console-container {
-  font-family: 'Fredoka One', cursive;
+div.console-container {
+font-family: 'Fredoka One', cursive;
   font-size:3em;
   text-align:center;
   display:block;
@@ -15,7 +15,17 @@
   right:0;
   margin:auto;
 }
-
+@media screen and (max-width: 1200px) {
+  div.console-container { 
+    font-size: 48px;
+  }
+}
+    
+@media screen and (max-width: 800px) {
+  div.console-container { 
+    font-size: 30px;
+  }
+}
 .console-underscore {
    display:inline-block;
   position:relative;
@@ -28,17 +38,31 @@
 img{
   display: inline-block;
 }
-
+.set_box{
+  background-color: #fff;
+  width: 60%;
+  height: 80%;
+  display: inline-block; 
+  margin: 20px;
+  border-radius: 10px;
+}
 .txt{
   font-family: 'Itim', cursive;
   font-size: 20px;
-  color: #765234;
-  display: inline-block;
-  background-color: #fff;
+  color: #765234; 
   padding: 20px;
-  text-align: center;
-  margin: 20px;
-  border-radius: 10px;
+  text-align: left;
+
+}
+
+.pic{
+  padding-top: 50px;
+  margin-top: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .txt { 
+    font-size: 16px;
+  }
 }
 
 #story_1{
@@ -49,6 +73,18 @@ img{
 #story_2{
   position: relative;
   top: 108px;
+}
+
+.box_scroll {
+    font-family: 'Itim', cursive;
+    height: auto;
+    padding: 0px;
+}
+
+@media screen and (max-width:800px) {
+  .left, .right {
+    width:100%;
+  }
 }
 
 /*Footer Part*/

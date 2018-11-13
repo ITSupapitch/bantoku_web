@@ -42,11 +42,6 @@ font-family: 'Fredoka One', cursive;
   text-align: center;
   color: #765234;
 }
-@media screen and (max-width: 1200px) {
-  .content_promo { 
-    font-size: 20px;
-  }
-}
 
 /* Shine */
 inner figure {
@@ -89,4 +84,31 @@ footer{
   font-size: 0.7em;
   font-family: 'Fredoka One', cursive;
   border-top: 2px solid white;
+}
+
+
+/*for tablet*/
+@media only screen and (max-width: 768px) {
+  div.console-container { 
+    font-size: 40px;
+  }
+  .content_promo { 
+    font-size: 22px;
+  }
+  .cont{
+    padding: 0.75em;
+  }
+}
+
+/*for mobile*/
+@media only screen and (max-width: 425px) {
+  div.console-container { 
+    font-size: 25px;
+  }
+  .content_promo { 
+    font-size: 18px;
+  }
+  .cont{
+    padding: 0.5em;
+  }
 }

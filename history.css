@@ -1,9 +1,13 @@
 *{
   transition: all .3s;
+  box-sizing: border-box;
+
 }
 
 /*text animation*/
-
+.cont{
+  padding: 1em;
+}
 div.console-container {
 font-family: 'Fredoka One', cursive;
   font-size:3em;
@@ -17,17 +21,47 @@ font-family: 'Fredoka One', cursive;
   right:0;
   margin:auto;
 }
-@media screen and (max-width: 1200px) {
-  div.console-container { 
-    font-size: 48px;
-  }
+.story1{
+  background-image:url("pic/home.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 100%;
+  float: left;
+  width: 100%;
+  padding: 1.5em;
+  display: inline-block;
 }
-    
-@media screen and (max-width: 800px) {
-  div.console-container { 
-    font-size: 30px;
-  }
+.story2{
+  background-image:url("pic/teddy_bun.jpg");
+  background-size: cover;
+  background-position: left;
+  padding-top: 150%;
+  float: left;
+  width: 100%;
+  padding: 1.5em;
+  display: inline-block;
 }
+.hr{
+    max-width: 120px;
+    border-color: Peru;
+    border-width: 6px;
+    border-radius: 4px;
+}
+.hr_undertxt{
+    max-width: 100px;
+    border-color: Peru;
+    border-width: 2px;
+    border-radius: 4px;
+}
+
+.box {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 30%;
+  height: 60%;
+  text-align: center;
+  border-radius: 20px;
+}
+
 .console-underscore {
    display:inline-block;
   position:relative;
@@ -40,9 +74,15 @@ font-family: 'Fredoka One', cursive;
 img{
   display: inline-block;
 }
+.photo{
+  width: 90%;
+}
+#box_center{
+  padding: 50px;
+}
 .set_box{
   background-color: #fff;
-  width: 60%;
+  width: 70%;
   height: 80%;
   display: inline-block; 
   margin: 20px;
@@ -56,25 +96,10 @@ img{
   text-align: left;
 
 }
-
+p{font-family: 'Itim', cursive;}
 .pic{
   padding-top: 50px;
   margin-top: 20px;
-}
-@media screen and (max-width: 1200px) {
-  .txt { 
-    font-size: 16px;
-  }
-}
-
-#story_1{
-  position: absolute;
-  top: 25px;
-}
-
-#story_2{
-  position: relative;
-  top: 108px;
 }
 
 .box_scroll {
@@ -82,13 +107,6 @@ img{
     height: auto;
     padding: 0px;
 }
-
-@media screen and (max-width:800px) {
-  .left, .right {
-    width:100%;
-  }
-}
-
 /*Footer Part*/
 .social{
     display: inline;
@@ -98,4 +116,35 @@ footer{
   font-size: 0.7em;
   font-family: 'Fredoka One', cursive;
   border-top: 2px solid white;
+}
+
+
+
+/*for tablet*/
+@media only screen and (max-width: 768px) {
+  div.console-container { 
+    font-size: 40px;
+  }
+  .box{
+    width: 50%;
+  }
+  .txt { 
+    font-size: 16px;
+  }
+  .cont{
+    padding: 0.5em;
+  }
+}
+
+/*for mobile*/
+@media only screen and (max-width: 425px) {
+  div.console-container { 
+    font-size: 25px;
+  }
+  .box{
+    width: 100%;
+  }
+  .cont{
+    padding: 0.5em;
+  }
 }

@@ -1,34 +1,43 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Bantoku</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="https://jabont.com/jayss/jayss.css">
-    <link rel="stylesheet" type="text/css" href="https://jabont.com/jayss/jayss-custom.php?ggfont=Itim&font=5f5f5f&bg=fff1d7&cl=3c280e,ffe9c2,5f5f5f,8B4513,CD853F">
-    <link href="https://fonts.googleapis.com/css?family=Itim|Fredoka+One" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="home.css">
-    <!-- cart -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="css/one-page-wonder.css" rel="stylesheet">
 
+<head>
+  <meta charset="UTF-8">
+  <title>Bantoku</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://jabont.com/jayss/jayss.css">
+  <link rel="stylesheet" type="text/css" href="https://jabont.com/jayss/jayss-custom.php?ggfont=Itim&font=5f5f5f&bg=fff1d7&cl=3c280e,ffe9c2,5f5f5f,8B4513,CD853F">
+  <link href="https://fonts.googleapis.com/css?family=Itim|Fredoka+One" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+  <!-- cart -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/one-page-wonder.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  
 </head>
+
 <body>
+  <div class="cont"></div>
 
 <!-- build navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="home.html"><img src="pic/logo.png" width="100px"></a>
+        <a class="navbar-brand" href="index.html"><img src="pic/logo.png" width="100px"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="home.html">WELCOME</a>
+              <a class="nav-link" href="index.html">WELCOME</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="menu.html">MENU</a>
@@ -52,38 +61,54 @@
     </nav>
 
 
-<!-- slideshow part -->
-<div class="slideshow-container">
-    <div class="mySlides fade">
-      <img  class="slidepic" src="pic/home.jpg" width="100%">
-        <div class="txt">
-            <h1 class="txt_head">Bantoku Bakery</h1>
-            <p style="font-size: 2vw; font-weight: 100; margin-top: 0;">
+    
+<header>
+  <div class="slider stick-dots">
+    <div class="slide">
+      <div class="slide__img">
+        <img src="" alt="" data-lazy="pic/home.jpg" class="full-image animated" data-animation-in="zoomInImage"/>
+      </div>
+      <div class="slide__content">
+        <div class="slide__content--headings">
+            <p class="top_title animated" data-animation-in="fadeInUp">Bantoku Bakery</p>
+            <p class="animated undertop_title" data-animation-in="fadeInUp" data-delay-in="0.3">
                 The bakery is ready to bring happiness to you.
             </p>
         </div>
+      </div>
     </div>
+    <div class="slide">
+      <div class="slide__img">
+        <img src="" alt="" data-lazy="pic/strawberry_croissant.jpg" class="full-image animated" data-animation-in="zoomInImage"/>
+      </div>
+      <div class="slide__content">
+        <div class="slide__content--headings">
+            <p class="top_title animated" data-animation-in="fadeInRight">Bantoku Bakery</p>
+            <p class="animated undertop_title" data-animation-in="fadeInRight" data-delay-in="0.2">
+                The bakery is ready to bring happiness to you.
+            </p>
+        </div>
+      </div>
+    </div>
+    <div class="slide">
+      <div class="slide__img">
+        <img src="" alt="" data-lazy="pic/chocolate_creamcheese.jpg" class="full-image animated" data-animation-in="zoomInImage"/>
+      </div>
+      <div class="slide__content">
+        <div class="slide__content--headings">
+            <p class="top_title animated" data-animation-in="fadeInDown">Bantoku Bakery</p>
+            <p class="animated undertop_title" data-animation-in="fadeInDown" data-delay-in="0.2">
+                The bakery is ready to bring happiness to you.
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
 
-    <div class="mySlides fade">
-      <img class="slidepic" src="pic/strawberry_croissant.jpg" width="100%">
-        <div class="txt">
-            <h1 class="txt_head">Bantoku Bakery</h1>
-            <p style="font-size: 2vw; font-weight: 100; margin-top: 0;">
-                The bakery is ready to bring happiness to you.
-            </p>
-        </div>
-    </div>
+<main>
+</main>
 
-    <div class="mySlides fade">
-      <img class="slidepic" src="pic/teddy_bun.jpg" width="100%">
-        <div class="txt">
-            <h1 class="txt_head">Bantoku Bakery</h1>
-            <p style="font-size: 2vw; font-weight: 100; margin-top: 0;">
-                The bakery is ready to bring happiness to you.
-            </p>
-        </div>
-    </div>
-</div>
 <!-- content part -->
   <div class="box_scroll">
         <theboxes class="rack">
@@ -93,14 +118,14 @@
             </box>
             <box col="4">
                 <inner>
-                    <center class="txt_our"> <br>
-                        <h1 style="color:#fff; text-decoration: underline;text-decoration-style: wavy; -webkit-text-stroke: 2px #3b221b;"> OUR STORY</h1>
-                          <p style="color:#3b221b; font-size: 20px;">
+                    <center class="box_our"> <br>
+                        <p class="head_textbox"><img src="pic/logo1.png" class="logo_title"> OUR STORY</p>
+                          <p id="textin_box">
                             BANTOKU ถือกำเนิดมาเมื่อปี ค. ศ. 2000 โดยเริ่มจากร้านค้าขนาดเล็กที่โตเกียวเกิดจากความตั้งใจของคนรักขนมปังของคุณทานากะและภรรยาเจ้าของกิจการ bantoku ได้ดำเนินธุรกิจในประเทศญี่ปุ่นประกอบธุรกิจบริการอาหารหลายรูปแบบทั้งขนมปังเค้กและได้มาเปิดสาขาใหม่ที่ประเทศไทยเป็นที่แรกเมื่อปี 2010
                           </p>
                           <div style="padding-top: 10px">                            
                             <a href="history.html">
-                                <button class="button" style="vertical-align:middle"><span><h3>View More</h3></span></button>
+                                <button class="button" style="vertical-align:middle"><span>มารู้จักพวกเรา</span></button>
                             </a>
                           </div>
                     </center>
@@ -120,7 +145,7 @@
                 </box>
                 <box col="4" style="margin-top: 50px;border: 3px solid #6a3e19;">
                     <inner>
-                        <h1 class="title_menu">Signature Menu</h1>
+                        <h1 class="head_textbox">Signature Menu</h1>
                     </inner>
                 </box>
                 <box col="4">
@@ -131,7 +156,7 @@
             <theboxes style="margin-top: 10px;">
                 <box col="4">
                     <inner>                        
-                        <div class="container" style="background-image: url('pic/teddy_bun.jpg')" id="flix_pic">
+                        <div class="picbottom" style="background-image: url('pic/teddy_bun.jpg')" id="flix_pic">
                           <div class="overlay">
                             <div class="text">Teddy bun</div>
                           </div>
@@ -140,7 +165,7 @@
                 </box>
                 <box col="4">
                     <inner>
-                        <div class="container" style="background-image: url('pic/summer_berries.jpg')" id="flix_pic">
+                        <div class="picbottom" style="background-image: url('pic/summer_berries.jpg')" id="flix_pic">
                           <div class="overlay">
                             <div class="text">Summer berries</div>
                           </div>
@@ -149,7 +174,7 @@
                 </box>
                 <box col="4">
                     <inner>
-                        <div class="container" style="background-image: url('pic/pumpkin_sunflower.jpg')" id="flix_pic">
+                        <div class="picbottom" style="background-image: url('pic/pumpkin_sunflower.jpg')" id="flix_pic">
                           <div class="overlay">
                             <div class="text">Pumpkin sunflower</div>
                           </div>
@@ -160,7 +185,7 @@
             <theboxes>
                 <box col="4">
                     <inner>
-                        <div class="container" style="background-image: url('pic/friedegg_bread.jpg')" id="flix_pic">  
+                        <div class="picbottom" style="background-image: url('pic/friedegg_bread.jpg')" id="flix_pic">  
                           <div class="overlay">
                             <div class="text">Friedegg bread</div>
                           </div>
@@ -169,7 +194,7 @@
                 </box>
                 <box col="4">
                     <inner>
-                        <div class="container" style="background-image: url('pic/anpan.jpg')" id="flix_pic">
+                        <div class="picbottom" style="background-image: url('pic/anpan.jpg')" id="flix_pic">
                           <div class="overlay">
                             <div class="text">Anpan</div>
                           </div>
@@ -178,7 +203,7 @@
                 </box>
                 <box col="4">
                     <inner>
-                        <div class="container" style="background-image: url('pic/cheese_boat.jpg')" id="flix_pic">
+                        <div class="picbottom" style="background-image: url('pic/cheese_boat.jpg')" id="flix_pic">
                           <div class="overlay">
                             <div class="text">Cheese boat</div>
                           </div>
@@ -195,7 +220,7 @@
                     <inner>
                         <div align="center">
                         <a href="menu.html">
-                         <button class="button" style="vertical-align:middle"><span><h3>All Menus</h3></span></button>
+                         <button class="button" style="vertical-align:middle"><span>เมนูของเรา</span></button>
                         </a>
                         </div>
                     </inner>
@@ -208,7 +233,6 @@
 
     </div>
 
-
 <!-- footer part -->
  <section>
     <footer id="footer" class="bg-ci2 t-center">
@@ -219,9 +243,16 @@
     </footer>
  </section>
 
-    <script type="text/javascript" src="home.js"></script>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js'></script>
+<script src='https://alexandrebuffet.fr/codepen/slider/slick-animation.min.js'></script>
+<script  src="js/index.js"></script>
+
+
 </body>
+
 </html>

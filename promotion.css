@@ -1,6 +1,21 @@
 *{
   transition: all .3s;
 }
+
+/*slide show*/
+#slidy-container { 
+  width: 100%; overflow: hidden; margin: 0 auto;
+}
+#slidy img{
+  max-height: 50vw;
+}
+.paddingtop{
+  height: 4.5em;
+}
+
+
+
+
 /*text animation*/
 div.console-container {
 font-family: 'Fredoka One', cursive;
@@ -14,17 +29,6 @@ font-family: 'Fredoka One', cursive;
   left:0;
   right:0;
   margin:auto;
-}
-@media screen and (max-width: 1200px) {
-  div.console-container { 
-    font-size: 48px;
-  }
-}
-    
-@media screen and (max-width: 800px) {
-  div.console-container { 
-    font-size: 30px;
-  }
 }
 
 .console-underscore {
@@ -98,12 +102,18 @@ footer{
   .cont{
     padding: 0.75em;
   }
+  #slidy img{
+    max-height: 50vw;
+  }
 }
 
 /*for mobile*/
 @media only screen and (max-width: 425px) {
   div.console-container { 
     font-size: 25px;
+  }
+  #slidy img{
+    max-height: 66vw;
   }
   .content_promo { 
     font-size: 18px;

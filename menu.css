@@ -5,43 +5,32 @@ inner {
   background-color: #fff;
 }
 
+/*Parallax Part*/
+.parallax {
+    /* The image used */
+    background-image: url("pic/teddy_bun.jpg");
 
-/*Picture Slideshow*/
-* {box-sizing: border-box}
-.mySlides {display: none}
+    /* Set a specific height */
+    min-height: 40vw; 
 
-.slideshow-container {
-  width: 100%;
-  position: relative;
-}
-.slidepic{
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-/*  -webkit-animation-duration: 0s;*/
-  animation-name: fade;
-  animation-duration: 5s;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-@-webkit-keyframes fade {
-  from {opacity: .6} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .6} 
-  to {opacity: 1}
-}
 
 /*Menu List Part*/
-h2{letter-spacing: 1px;}
+.text_title{
+  color: #3b221b;
+  font-size: 30px;
+  font-weight: 20;
+  font-family: 'Itim', cursive;
+  margin-bottom: 0;
+}
 
-box{opacity: 0.9;}
+.box{opacity: 0.9;}
 
 
 .btn_shop {
@@ -119,4 +108,40 @@ footer{
   font-size: 0.7em;
   font-family: 'Fredoka One', cursive;
   border-top: 2px solid white;
+}
+
+
+
+/*for tablet*/
+@media only screen and (max-width: 768px) {
+  div.console-container { 
+    font-size: 40px;
+  }
+  .btn_shop{
+    font-size: 1.5rem;
+    width: 60%
+  }
+  .parallax{
+    min-height: 60vw;
+  }
+  
+
+/*for mobile*/
+@media only screen and (max-width: 425px) {
+  div.console-container { 
+    font-size: 25px;
+  }
+  .cont{
+    padding: 0.5em;
+  }
+  .text_title{
+    font-size: 22px;
+  }
+  .btn_shop{
+        font-size: 1rem;
+        width: 80%;
+  }
+  .parallax{
+    min-height: 114vw;
+  }
 }

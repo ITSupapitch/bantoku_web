@@ -6,14 +6,28 @@
 
 }
 
+/*Parallax Part*/
+.parallax {
+    /* The image used */
+    background-image: url("pic/strawberry_croissant.jpg");
 
-#welpic{
+    /* Set a specific height */
+    min-height: 40vw; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*#welpic{
   width: 100%;
   height: 500px;
   object-fit: cover;
   -webkit-filter: blur(3px); /* Safari 6.0 - 9.0 */
-    filter: blur(1px);
-}
+/*    filter: blur(1px);*/
+/*}*/
 
 
 /*text animation*/
@@ -62,6 +76,9 @@ font-family: 'Fredoka One', cursive;
 strong{
   font-weight: 100;
 }
+.imgph_add{
+    width: 30px;
+}
 
 .txt_our {
   padding: 3em;
@@ -71,11 +88,23 @@ strong{
 .box_contact {
   padding: 20px;
   background-color: #fff;
-/*  border-radius: 20px;*/
   width: 500px;
   height: 300px;
-/*  box-shadow: 0px 0px 5px #ccc;*/
   text-align: left;
+}
+#line{
+    max-width: 90%;
+    border-color: Peru;
+    border-width: 4px;
+    border-radius: 4px;
+    size: 50%;
+}
+.headtxt{
+  font-size: 26px;
+  color: #715000;
+}
+.txtinfo{
+  font-size: 16px;
 }
 
 
@@ -92,4 +121,53 @@ footer{
   font-size: 0.7em;
   font-family: 'Fredoka One', cursive;
   border-top: 2px solid white;
+}
+
+
+
+
+/*for tablet*/
+@media only screen and (max-width: 768px) {
+  div.console-container { 
+    font-size: 40px;
+  }
+  .cont{
+    padding: 0.5em;
+  }
+  .parallax{
+    min-height: 60vw;
+  }
+  .imgph_add{
+    width: 0px;
+  }
+
+}
+
+/*/*for mobile*/
+@media only screen and (max-width: 425px) {
+  div.console-container { 
+    font-size: 25px;
+  }
+  .cont{
+    padding: 0.5em;
+  }
+  .parallax{
+    min-height: 114vw;
+  }
+  .shadow{
+    box-shadow:0 .5rem 1rem rgba(0,0,0,.15)!important; 
+    width:90%;
+    height: 275px;
+  }
+  .imgph_add{
+    width: 0px;
+  }
+  .headtxt{
+    font-size: 21px;
+    color: #715000;
+  }
+  .txtinfo{
+    font-size: 13px;
+  }
+
 }

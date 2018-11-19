@@ -3,6 +3,9 @@
 }
 inner {
   background-color: #fff;
+  display: inline-block;
+  width: 350px;
+  margin: 14px;
 }
 
 /*Parallax Part*/
@@ -72,7 +75,6 @@ span.basket_shopping{
   position: relative;
   left: 20%;
 }
-
 
 
 /*text animation*/

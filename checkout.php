@@ -65,6 +65,7 @@ Sum Total <?=number_format($SumTotal,2);?>
       <td>Address</td>
       <td><textarea name="txtAddress"></textarea></td>
     </tr>
+    <input type="hidden" name="total" value="<?=$SumTotal?>">
     
   </table>
     <input type="submit" name="Submit" value="Submit">

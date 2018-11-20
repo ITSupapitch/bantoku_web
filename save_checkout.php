@@ -7,9 +7,9 @@ $conn = mysqli_connect("localhost","root","root","bantoku");
   $SumTotal = 0;
 
   $strSQL = "
-	INSERT INTO orders (OrderDate,Name,Surname,Address,Tel)
+	INSERT INTO orders (OrderDate,Name,Surname,Address,Tel,total)
 	VALUES
-	('".date("Y-m-d H:i:s")."','".$_POST["txtName"]."','".$_POST["txtSurname"]."','".$_POST["txtAddress"]."','".$_POST["txtTel"]."') 
+	('".date("Y-m-d H:i:s")."','".$_POST["txtName"]."','".$_POST["txtSurname"]."','".$_POST["txtAddress"]."','".$_POST["txtTel"]."','".$_POST["total"]."') 
   ";
   mysqli_query($conn,$strSQL) or die(mysqli_error($conn));
 

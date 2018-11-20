@@ -129,7 +129,7 @@ while($objResult2 = mysqli_fetch_array($objQuery2))
  }
   ?>
 </table>
-<h2> Total : <?=number_format($SumTotal,2);?> ฿</h2>
+<h2> Total : <?=$objResult["total"];?>฿</h2>
 </center> 
 </div> 
 </section>

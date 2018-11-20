@@ -25,6 +25,12 @@ inner {
 
 
 /*Menu List Part*/
+.frame_cart{
+   display: none;
+  width: 300px;
+  height: 200px;
+}
+
 .text_title{
   color: #3b221b;
   font-size: 30px;

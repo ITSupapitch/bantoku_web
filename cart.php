@@ -77,10 +77,22 @@ $objQuery = mysqli_query($conn,$strSQL)  or die(mysqli_error($conn));
           <?php
             $Total = 0;
             $SumTotal = 0;
+            if (isset($_SESSION["intLine"])) {
+              $int_num = $_SESSION["intLine"];
+            }
+            else{
+              $int_num = 0;
 
-            for($i=0;$i<=(int)$_SESSION["intLine"];$i++)
+            }
+            if (isset($_SESSION["strProductID"])) {
+              $str_pd = $_SESSION["strProductID"];
+            }
+            else{
+              $str_pd = 0;
+            }
+            for($i=0;$i<=(int)$int_num;$i++)
             {
-              if($_SESSION["strProductID"][$i] != "")
+              if($str_pd[$i] != "")
               {
                 $strSQL = "SELECT * FROM product WHERE productID = '".$_SESSION["strProductID"][$i]."' ";
               $objQuery = mysqli_query($conn,$strSQL)  or die(mysqli_error($conn));

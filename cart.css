@@ -20,8 +20,36 @@
     background-size: cover;
 }
 
+/*text animation*/
+.console-container {
+font-family: 'Fredoka One', cursive;
+  font-size:3em;
+  text-align:center;
+  display:block;
+  position:relative;
+  color:Peru;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+}
+
+.console-underscore {
+   display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+}
+
+
 
 /*Midle detail Part*/
+i{
+  font-size: 5em;
+  padding: 50px;
+}
+
 .box_scroll {
     font-family: 'Itim', cursive;
     background-color: #fff1d7;

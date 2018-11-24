@@ -11,6 +11,7 @@ session_start();
     <link rel="stylesheet" type="text/css" href="https://jabont.com/jayss/jayss.css">
     <link rel="stylesheet" type="text/css" href="https://jabont.com/jayss/jayss-custom.php?ggfont=Itim&font=5f5f5f&bg=fff1d7&cl=fff,ffe9c2,5f5f5f,8B4513,CD853F">
     <link href="https://fonts.googleapis.com/css?family=Itim|Fredoka+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="cart.css">
 
     <!-- cart -->
@@ -68,11 +69,18 @@ $objQuery = mysqli_query($conn,$strSQL)  or die(mysqli_error($conn));
 <!-- build parallax -->
     <div class="parallax"></div>
 
+<!-- topic part -->
+<section class="cl-bg padding-l-vtc" id="sec2">
+    <div class="cont padding-s"></div>
+</section>
+
+<center><div class='console-container'>
+    <span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
+</center><br>
+
 <!-- build detail -->
     <div class="box_scroll">
       <center>
-            <br><br>
-            <h1>รายการสินค้า</h1>
 
           <?php
             $Total = 0;
@@ -111,9 +119,21 @@ $objQuery = mysqli_query($conn,$strSQL)  or die(mysqli_error($conn));
               }
             }
           ?>
+          <?php
+            if($SumTotal <= 0){
+          ?>
+          <br><h2>คุณยังไม่มีสินค้าในตะกร้า</h2>
+            <i class="fas fa-cart-plus"></i><br>
+          <?php 
+           }
+           ?>
+           <?php 
+           if($SumTotal > 0){
+            ?>
             <div class="txt_cart">
                 <h2> Total : <?=number_format($SumTotal,2);?> ฿</h2>
             </div><br>
+            <?php } ?>
 
             <div class="txt_cart">
               <a class="button" id="back" href="menu.php">Back to Menu</a>
@@ -121,7 +141,7 @@ $objQuery = mysqli_query($conn,$strSQL)  or die(mysqli_error($conn));
                 if($SumTotal > 0){
               ?>
                   <a class="button" id="checkout" href="checkout.php">Checkout</a>
-            </div><br><br><br><br>
+            </div>
               <?php
                 }
               ?>
@@ -140,7 +160,9 @@ $objQuery = mysqli_query($conn,$strSQL)  or die(mysqli_error($conn));
             </div>
           </div>
   
-    
+<section class="cl-bg padding-l-vtc" id="sec2">
+  <div class="cont padding-s"></div>
+</section>
 <!-- footer part -->
   <section>
     <footer id="footer" class="bg-ci2 t-center">
@@ -152,6 +174,7 @@ $objQuery = mysqli_query($conn,$strSQL)  or die(mysqli_error($conn));
  </section>
 
     <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="cart.js"></script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>

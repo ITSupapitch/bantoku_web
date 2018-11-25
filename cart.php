@@ -113,6 +113,8 @@ $objQuery = mysqli_query($conn,$strSQL)  or die(mysqli_error($conn));
               <?=$objResult["Price"];?><br>
               <?=$_SESSION["strQty"][$i];?><br>
               <?=number_format($Total,2);?>
+              <a href="plus.php?Line=<?=$i;?>"><button>+</button></a>
+              <a href="reduce.php?Line=<?=$i;?>"><button>-</button></a>
               <a href="delete.php?Line=<?=$i;?>"><button>DELETE</button></a>
               </p>
           <?php

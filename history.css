@@ -41,6 +41,7 @@ font-family: 'Fredoka One', cursive;
 }
 .title{
   font-size: 2em;
+  color: #765234;
 }
 .hr{
     max-width: 120px;
@@ -71,7 +72,9 @@ font-family: 'Fredoka One', cursive;
 }
 
 content part
-
+h3{
+  color: #765234;
+}
 img{
   display: inline-block;
 }

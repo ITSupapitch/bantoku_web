@@ -2,18 +2,20 @@
   transition: all .3s;
 }
 
-/*slide show*/
-#slidy-container { 
-  width: 100%; overflow: hidden; margin: 0 auto;
-}
-#slidy img{
-  max-height: 50vw;
-}
-.paddingtop{
-  height: 4.5em;
-}
+/*Parallax Part*/
+.parallax {
+    /* The image used */
+    background-image: url("pic/chocolate_creamcheese.jpg");
 
+    /* Set a specific height */
+    min-height: 40vw; 
 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
 /*text animation*/

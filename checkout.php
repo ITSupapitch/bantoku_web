@@ -12,8 +12,9 @@ session_start();
     <link rel="stylesheet" type="text/css" href="https://jabont.com/jayss/jayss-custom.php?ggfont=Itim&font=5f5f5f&bg=fff1d7&cl=fff,ffe9c2,5f5f5f,8B4513,CD853F">
     <link href="https://fonts.googleapis.com/css?family=Itim|Fredoka+One" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    
 
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+    
     <!-- cart -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
@@ -26,7 +27,7 @@ session_start();
 
 </head>
 <body>
-
+<div class="page-wrapper">
 <!-- build navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
       <div class="container">
@@ -62,24 +63,24 @@ session_start();
 
 <!-- connection part -->
 <?php
-$conn = mysqli_connect("localhost","root","root","bantoku");
+$conn = mysqli_connect("localhost","root","","bantoku");
 $strSQL = "SELECT * FROM product";
 $objQuery = mysqli_query($conn,$strSQL)  or die(mysqli_error($conn));
 ?>
 
 <!-- build parallax -->
-    <div class="parallax"></div>
+<!--     <div class="parallax"></div> -->
 
 <!-- topic part -->
 <section class="cl-bg padding-l-vtc" id="sec2">
-    <div class="cont padding-s"></div>
+    <div class="cont padding-m"></div>
 </section>
-<center><h1>แบบฟอร์มกรอกข้อมูลลูกค้า</h1></center>
+
 <!-- build detail -->
 
-<section class="cl-bg padding-xs-vtc" id="sec3">
+<center>
   <div class="cont padding-xl">
-  <div class="box_scroll">
+  <div class="box_scroll round shadow">
   <?php
   $Total = 0;
   $SumTotal = 0;
@@ -98,42 +99,57 @@ $objQuery = mysqli_query($conn,$strSQL)  or die(mysqli_error($conn));
     }
   }
   ?>
+<center><font class="font_header">แบบฟอร์มกรอกข้อมูลลูกค้า</font></center>
+<form name="form1" method="post" class="round" action="save_checkout.php">
 
-<form name="form1" method="post" class="round shadow" action="save_checkout.php">
-      Name: 
-      <input type="text" name="txtName"><br><br>
-    
-      Surname: 
-      <input type="text" name="txtSurname"><br><br>
+      <label for="fname">ชื่อของคุณลูกค้า</label>
+      <input type="text" id="fname" name="txtName" placeholder="ชื่อของคุณ..">
 
-      Tel: 
-      <input type="text" name="txtTel"><br><br>
+      <label for="lname">นามสกุลของคุณลูกค้า</label>
+      <input type="text" id="lname" name="txtSurname" placeholder="นามสกุลของคุณ..">
 
-      Address: 
-      <textarea name="txtAddress"></textarea><br><br>
+      <label for="lname">เบอร์ติดต่อของคุณลูกค้า</label>
+      <input type="text" id="tel" name="txtTel" placeholder="เบอร์ติดต่อของคุณ..">
 
-      <h3>หมายเหตุ: ชำระเงินปลายทางเท่านั้น!</h>
-    
-    <input type="hidden" name="total" value="<?=$SumTotal?>">
-    <br><input type="submit" name="Submit" value="Confirm">
-</form>
+      <label for="lname">ที่อยู่นำจัดส่งของคุณลูกค้า</label><br>
+      <textarea type="text" id="add" name="txtAddress" placeholder="ที่อยู่นำจัดส่งของคุณ.."></textarea>
+
+      <center><font class="font_note">หมายเหตุ: ชำระเงินปลายทางเท่านั้น!</font>
+      <a class="btn trigger" href="#">ยืนยันการสั่งซื้อ</a>
+    </center>
+
+
+
+    </div>
+  </div>
+</center>
+</div>
+
+<!-- Modal -->
+<div class="modal-wrapper ">
+  <div class="modal round shadow">
+    <div class="head">
+      <a class="btn-close trigger"  href="receipt.php">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </a>
+    </div>
+    <div class="content">
+        <div class="good-job">
+          <i class="fa fa-check-circle-o" aria-hidden="true"></i><br>
+          <font class="font_inpopup">ทำการสั่งซื้อสินค้าเรียบร้อย!<br>กำลังจัดส่งความอร่อย ...</font><br><br>
+           <input type="hidden" name="total" value="<?=$SumTotal?>">
+          <button type="submit" name="Submit" value="ยืนยันการสั่งซื้อ" class="btn">รับใบเสร็จได้เลย</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
 <?php
 mysqli_close($conn);
 ?>
 
-<!-- popup part -->
 
-         <!--  <div class="popup" id="success">
-            <div class="popup-inner">
-                <center><h1>สั่งซื้อสินค้าเรียบร้อยแล้ว</h1></center>
-              <a class="popup__close" href="receipt.php">X</a>
-            </div>
-          </div> -->
-
-    </div>
-  </div>
-  </section>
-  
 <!-- footer part -->
   <section>
     <footer id="footer" class="bg-ci2 t-center">
@@ -146,6 +162,7 @@ mysqli_close($conn);
 
     <!-- Bootstrap core JavaScript -->
     <script type="text/javascript" src="checkout.js"></script>
+    <script type="text/javascript" src="checkout_popup.js"></script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>

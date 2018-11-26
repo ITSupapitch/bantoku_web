@@ -4,22 +4,128 @@
     transition: all .3s;
 }
 
-
-/*Parallax Part*/
-.parallax {
-    /* The image used */
-    background-image: url("pic/home.jpg");
-
-    /* Set a specific height */
-    min-height: 500px; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.page-wrapper {
+  width: 100%;
+  height: 100%;
+  background: url(pic/home.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/*popup*/
+.blur-it {
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
 }
 
+a.btn {
+  border-radius: 4px;
+  background-color: #3b221b;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 5px;
+  width: 180px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+a.btn:hover{
+  background-color: #8B462B;
+  opacity: 0.9;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn {
+  border-radius: 4px;
+  background-color: #4caf50;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 5px;
+  width: 180px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.btn:hover{
+  background-color: #55af50;
+  opacity: 0.5;
+  color: #ccc;
+  text-decoration: none;
+}
+
+
+.modal-wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0; 
+  left: 0;
+  background: rgba(255, 233, 194, 0.8);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.modal-wrapper.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  width: 500px;
+  height: 340px;
+  display: block;
+  margin: 50% 0 0 -300px;
+  position: relative;
+  top: 50%; 
+  left: 50%;
+  background: #fff;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.modal-wrapper.open .modal {
+  margin-top: -200px;
+  opacity: 1;
+}
+
+.head { 
+  width: 100%;
+  padding: 12px 30px;
+  overflow: hidden;
+  background: #4caf50;
+}
+
+.btn-close {
+  font-size: 20px;
+  display: block;
+  float: right;
+  color: #fff;
+}
+.font_inpopup{
+  font-size: 20px;
+}
+
+.content {
+  padding: 10%;
+}
+
+.good-job {
+  text-align: center;
+  font-family: 'Itim', cursive;
+  color: #4caf50;
+}
+.good-job .fa-check-circle-o {
+  font-size: 60px;
+}
 
 /*Midle detail Part*/
 
@@ -27,42 +133,57 @@
     font-family: 'Itim', cursive;
     background-color: #fff1d7;
     padding: 0px;
+    width: 70%;
+    padding: 10px;
+
 }
 
 form{
-  background-color: white;
-  padding: 20px;
+  background-color: #fff;
+  margin-top: 10px;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   width: auto;
   height: auto;
+  text-align: left;
 }
 
+input[type=text], textarea {
+    width: 100%;
+    padding: 5px 10px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #795548;
+    border-radius: 6px;
+    box-sizing: border-box;
+    box-shadow: 2px 0px 3px #ddd;
+}
+label{
+  color: #795548;
+  font-size: 18px;
+  font-weight: 2px;
+}
+#add{
+  width: 100%;
+}
+
+.font_header{
+  font-size: 36px;
+  font-weight: 3px;
+  color: #795548;
+}
+.font_note{
+  font-size: 25px;
+  font-weight: bold;
+  color: #cc5555;
+}
 
 textarea{
   width: 300px;
 }
 
-.button {
-  display: inline-block;
-  border-radius: 4px;
-  background-color: #3b221b;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 28px;
-  padding: 10px;
-  width: 200px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
-
-.button:hover{
-  background-color: #8B462B;
-  opacity: 0.9;
-  color: #fff;
-  text-decoration: none;
-}
-  
 
 /*Footer Part*/
 .social {
@@ -72,4 +193,85 @@ footer{
   font-size: 0.7em;
   font-family: 'Fredoka One', cursive;
   border-top: 2px solid white;
+}
+
+
+/*for tablet*/
+@media only screen and (max-width: 768px) {
+  form{
+    padding-left: 10%;
+    padding-right: 10%;   
+  }
+  .box_scroll {
+    background-color: #fff1d7;
+    padding: 0px;
+    width: 85%;
+    padding: 10px;
+  }
+  .font_header{
+    font-size: 33px;
+  }
+  .modal {
+    margin: 50% 0 0 -250px;
+  }
+}
+
+/*/*for mobile*/
+@media only screen and (max-width: 425px) {
+  form{
+    padding-left: 10%;
+    padding-right: 10%;   
+  }
+  .box_scroll {
+    background-color: #fff1d7;
+    padding: 0px;
+    width: 100%;
+    padding: 10px;
+  }
+  .font_header{
+    font-size: 18px;
+  }
+  label{
+    color: #795548;
+    font-size: 15px;
+    font-weight: 2px;
+  }
+
+  input[type=text], textarea {
+    padding: 0px 10px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #795548;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 2px 0px 3px #ddd;
+  }
+  input,textarea[placeholder]{
+    font-size: 13px;
+  }
+  a.btn{
+    font-size: 14px;
+    padding: 0px;
+    width: 140px;
+  }
+  .font_note{
+    font-size: 14px;
+    font-weight: normal;
+    color: #aa5555;
+  }
+  .modal {
+    width: 260px;
+    height: 280px;
+    margin: 50% 0 0 -130px;
+  }
+  .btn-close {
+    font-size: 15px;
+  }
+  .font_inpopup{
+    font-size: 15px;
+  }
+  .btn{
+    font-size: 15px;
+    width: 150px;
+  }
 }

@@ -60,7 +60,7 @@ session_start();
 
 <!-- connection part -->
 <?php
-$conn = mysqli_connect("localhost","root","root","bantoku");
+$conn = mysqli_connect("localhost","root","","bantoku");
 $strSQL = "SELECT * FROM orders WHERE OrderID = '".$_GET["OrderID"]."' ";
 $objQuery = mysqli_query($conn,$strSQL)  or die(mysql_error($conn));
 $objResult = mysqli_fetch_array($objQuery);

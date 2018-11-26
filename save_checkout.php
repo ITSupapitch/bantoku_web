@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$conn = mysqli_connect("localhost","root","root","bantoku");
+$conn = mysqli_connect("localhost","root","","bantoku");
 
   $Total = 0;
   $SumTotal = 0;
@@ -32,7 +32,7 @@ mysqli_close($conn);
 
 session_destroy();
 
-header("location:finish_order.php?OrderID=".$strOrderID);
+header("location:receipt.php?OrderID=".$strOrderID);
 ?>
 
 <?php /* This code download from www.ThaiCreate.Com */ ?>

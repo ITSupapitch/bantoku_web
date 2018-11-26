@@ -57,7 +57,7 @@
 
 <!-- connection part -->
 <?php
-$conn = mysqli_connect("localhost","root","root","bantoku");
+$conn = mysqli_connect("localhost","root","","bantoku");
 $strSQL = "SELECT * FROM product";
 $objQuery = mysqli_query($conn,$strSQL)  or die(mysqli_error($conn));
 ?>

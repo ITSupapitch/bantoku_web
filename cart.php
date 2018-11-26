@@ -53,7 +53,7 @@ session_start();
             </li>
             <li class="nav-item">
               <a class="nav-link" href="cart.php">
-                <i class="navlist fa fa-shopping-cart"></i></a>
+                <i class="navlist fa fa-shopping-basket"></i></a>
             </li>
           </ul>
         </div>
@@ -135,7 +135,8 @@ $objQuery = mysqli_query($conn,$strSQL)  or die(mysqli_error($conn));
             if($SumTotal <= 0){
           ?>
           <br><h2>คุณยังไม่มีสินค้าในตะกร้า</h2>
-            <i class="fas fa-cart-plus" id="addcart"></i><br>
+            <i class="fa fa-shopping-basket" id="addcart"></i>
+            <i class="fa fa-plus" id="addcart"></i><br>
           <?php 
            }
            ?>

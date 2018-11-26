@@ -90,7 +90,7 @@ $objQuery = mysqli_query($conn,$strSQL)  or die(mysqli_error($conn));
  					<img src="pic/<?=$objResult["Picture"];?>" alt="product" class="round padding-m" width="90%">
 					<div class="t-center">
 						<a href="order.php?ProductID=<?=$objResult["ProductID"];?>" target="cart">
-						<button class="btn_shop shadow">
+						<button class="btn_shop shadow" onclick="myaleart()">
 							<span class="baht">฿</span>
 							<span class="price"><?php echo $objResult["Price"];?></span>
 							<span class="plus">+</span>
@@ -118,7 +118,11 @@ $objQuery = mysqli_query($conn,$strSQL)  or die(mysqli_error($conn));
 <?php
 mysqli_close($conn);
 ?>
+
 <script type="text/javascript" src="menu.js"></script>
+<script>function myaleart(){
+  alert("คุณได้เพิ่มสินค้าลงตะกร้า!");
+}</script>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

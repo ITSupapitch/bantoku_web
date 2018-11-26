@@ -1,0 +1,75 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    transition: all .3s;
+}
+
+
+/*Parallax Part*/
+.parallax {
+    /* The image used */
+    background-image: url("pic/home.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*Midle detail Part*/
+
+.box_scroll {
+    font-family: 'Itim', cursive;
+    background-color: #fff1d7;
+    padding: 0px;
+}
+
+form{
+  background-color: white;
+  padding: 20px;
+  width: auto;
+  height: auto;
+}
+
+
+textarea{
+  width: 300px;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #3b221b;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button:hover{
+  background-color: #8B462B;
+  opacity: 0.9;
+  color: #fff;
+  text-decoration: none;
+}
+  
+
+/*Footer Part*/
+.social {
+    display: inline;
+}
+footer{
+  font-size: 0.7em;
+  font-family: 'Fredoka One', cursive;
+  border-top: 2px solid white;
+}

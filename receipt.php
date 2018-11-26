@@ -24,6 +24,7 @@ session_start();
 
 </head>
 <body>
+<div class="page-wrapper">
 
 <!-- build navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
@@ -66,41 +67,36 @@ $objQuery = mysqli_query($conn,$strSQL)  or die(mysql_error($conn));
 $objResult = mysqli_fetch_array($objQuery);
 ?>
 
-<!-- build parallax -->
-    <div class="parallax"></div>
+
 
 <!-- build detail -->
-<section class="cont padding-xxl">
-  <div class="box_scroll">
+<section class="cl-bg padding-l-vtc" id="sec2">
+    <div class="cont padding-xl"></div>
+</section>
+<center>
+  <div class="box_scroll  round shadow">
   <center>
-    <h1>สรุปรายการสินค้าที่สั่งซื้อ</h1>
-  <table width="200" border="2">
-    <tr>
-      <td width="71">ชื่อ</td>
-      <td width="217">
-    <?=$objResult["Name"];?></td>
-    </tr>
-    <tr>
-      <td>นามสกุล</td>
-      <td><?=$objResult["Surname"];?></td>
-    </tr>
-    <tr>
-      <td>เบอร์โทรศัพท์</td>
-      <td><?=$objResult["Tel"];?></td>
-    </tr>
-    <tr>
-      <td>ที่อยู่</td>
-      <td><?=$objResult["Address"];?></td>
-    </tr>
-  </table>
+    <img src="pic/logo1.png ">
+    <div align="left" class="detail_cus">
+    <b>ชื่อ:</b> 
+    <?=$objResult["Name"];?><br>
+    <b>นามสกุล:</b>
+    <?=$objResult["Surname"];?><br>
+    <b>เบอร์โทรศัพท์:</b>
+    <?=$objResult["Tel"];?><br>
+    <b>ที่อยู่:</b>
+    <?=$objResult["Address"];?>
+    </div>
+
+<hr>
 
 
-<table width="400"  border="2">
+<table width="400"  border="0">
   <tr>
-    <td width="82">รายการสินค้า</td>
-    <td width="82">ราคา</td>
-    <td width="79">จำนวน</td>
-    <td width="79">ราคา</td>
+    <td width="82"></td>
+    <td width="82"></td>
+    <td width="79"></td>
+    <td width="90"></td>
   </tr>
 <?php
 
@@ -121,17 +117,25 @@ while($objResult2 = mysqli_fetch_array($objQuery2))
     <tr>
 
   <td><?=$objResult3["ProductName"];?></td>
-  <td><?=$objResult3["Price"];?></td>
-  <td><?=$objResult2["Qty"];?></td>
-  <td><?=number_format($Total,2);?></td>
+  <td align="right"><?=$objResult3["Price"];?></td>
+  <td align="right"><?=$objResult2["Qty"];?></td>
+  <td align="right"><?=number_format($Total,2);?>฿</td>
     </tr>
     <?php
  }
   ?>
 </table>
-<h2> Total : <?=$objResult["total"];?>฿</h2>
+<hr>
+<font class="font_total"> Total : <?=$objResult["total"];?>฿</font>
+<br><br>
+<font class="font_thank">ขอบคุณทุกๆออเดอร์จากคุณลูกค้านะคะ</font>
 </center> 
 </div> 
+
+</div>
+</center>
+<section class="cl-bg padding-l-vtc" id="sec2">
+    <div class="cont padding-m"></div>
 </section>
 <!-- footer part -->
   <section>

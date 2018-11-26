@@ -128,7 +128,8 @@ while($objResult2 = mysqli_fetch_array($objQuery2))
 <hr>
 <font class="font_total"> Total : <?=$objResult["total"];?>฿</font>
 <br><br>
-<font class="font_thank">ขอบคุณทุกๆออเดอร์จากคุณลูกค้านะคะ</font>
+<font class="font_thank">ขอบคุณสำหรับทุก ๆ รายการสั่งซื้อ</font><br>
+<font class="font_thank">พวกเรายินดีที่ได้ส่งต่อความสุขให้คุณ :)</font>
 </center> 
 </div> 
 

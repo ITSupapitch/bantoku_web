@@ -102,16 +102,16 @@ $objQuery = mysqli_query($conn,$strSQL)  or die(mysqli_error($conn));
 <center><font class="font_header">แบบฟอร์มกรอกข้อมูลลูกค้า</font></center>
 <form name="form1" method="post" class="round" action="save_checkout.php">
 
-      <label for="fname">ชื่อของคุณลูกค้า</label>
+      <label for="fname">ชื่อ: </label>
       <input type="text" id="fname" name="txtName" placeholder="ชื่อของคุณ..">
 
-      <label for="lname">นามสกุลของคุณลูกค้า</label>
+      <label for="lname">นามสกุล: </label>
       <input type="text" id="lname" name="txtSurname" placeholder="นามสกุลของคุณ..">
 
-      <label for="lname">เบอร์ติดต่อของคุณลูกค้า</label>
+      <label for="lname">เบอร์ติดต่อ: </label>
       <input type="text" id="tel" name="txtTel" placeholder="เบอร์ติดต่อของคุณ..">
 
-      <label for="lname">ที่อยู่นำจัดส่งของคุณลูกค้า</label><br>
+      <label for="lname">ที่อยู่ในการจัดส่ง: </label><br>
       <textarea type="text" id="add" name="txtAddress" placeholder="ที่อยู่นำจัดส่งของคุณ.."></textarea>
 
       <center><font class="font_note">หมายเหตุ: ชำระเงินปลายทางเท่านั้น!</font>

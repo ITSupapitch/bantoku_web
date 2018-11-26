@@ -45,7 +45,36 @@ font-family: 'Fredoka One', cursive;
 
 
 /*Midle detail Part*/
-i{
+
+.update{
+  border-radius: 100%;
+  color: white;
+  background-color: peru;
+  padding: 8px;
+  font-size: 1.2em;
+}
+
+.column1{
+    float: left;
+    width: 40%;
+    margin-left: 5px;
+    height: auto;
+}
+.column2{
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: auto;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    padding: 20px;
+}
+#addcart{
   font-size: 5em;
   padding: 50px;
 }
@@ -61,13 +90,21 @@ i{
   padding: 3em;
   color: #fff;
 }
+#delete{
+  color: black;
+  text-decoration: none;
+  size: 2em;
+}
 
-
+h3{
+  color: #765234;
+}
 .box_cart {
   align-content: left;
   width: 50%;
-  height: 150px;
-  padding: 30px;
+  height: auto;
+  padding-right: 10px;
+  padding-left: 10px;
   margin-top: 50px;
   margin-bottom: 30px;
   border: 3px solid #624329;
@@ -222,7 +259,6 @@ i{
 }
     
 
-
 /*Footer Part*/
 .social {
     display: inline;
@@ -232,3 +268,4 @@ footer{
   font-family: 'Fredoka One', cursive;
   border-top: 2px solid white;
 }
+

@@ -12,7 +12,7 @@ session_start();
     <link rel="stylesheet" type="text/css" href="https://jabont.com/jayss/jayss-custom.php?ggfont=Itim&font=5f5f5f&bg=fff1d7&cl=fff,ffe9c2,5f5f5f,8B4513,CD853F">
     <link href="https://fonts.googleapis.com/css?family=Itim|Fredoka+One" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="cart.css">
+    
 
     <!-- cart -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -20,6 +20,7 @@ session_start();
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/one-page-wonder.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="cart.css">
 
 <!--     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
 
@@ -61,7 +62,7 @@ session_start();
 
 <!-- connection part -->
 <?php
-$conn = mysqli_connect("localhost","root","","bantoku");
+$conn = mysqli_connect("localhost","root","root","bantoku");
 $strSQL = "SELECT * FROM product";
 $objQuery = mysqli_query($conn,$strSQL)  or die(mysqli_error($conn));
 ?>
@@ -107,16 +108,25 @@ $objQuery = mysqli_query($conn,$strSQL)  or die(mysqli_error($conn));
               $objResult = mysqli_fetch_array($objQuery);
               $Total = $_SESSION["strQty"][$i] * $objResult["Price"];
               $SumTotal = $SumTotal + $Total;
-          ?>
-            
-              <p class="box_cart" align="left"><?=$objResult["ProductName"];?><br>
-              <?=$objResult["Price"];?><br>
-              <?=$_SESSION["strQty"][$i];?><br>
-              <?=number_format($Total,2);?>
-              <a href="plus.php?Line=<?=$i;?>"><button>+</button></a>
-              <a href="reduce.php?Line=<?=$i;?>"><button>-</button></a>
-              <a href="delete.php?Line=<?=$i;?>"><button>DELETE</button></a>
-              </p>
+              ?>
+
+              <div class="box_cart" align="left">
+
+              <div class="row">
+                  <div style="background-image: url('pic/<?=$objResult["Picture"];?>');" class="round bg-cover column1">
+                  </div>
+                  <div class="column2">
+                    <a href="delete.php?Line=<?=$i;?>" id="delete">x</a><br>
+                    <center><h3><?=$objResult["ProductName"];?></h3>
+                    <h4><?=$_SESSION["strQty"][$i];?> x <?=$objResult["Price"];?></h4>
+                    <a href="reduce.php?Line=<?=$i;?>"><i class="update fa fa-minus"></i></a>
+                    <font size="5em"><?=$_SESSION["strQty"][$i];?></font>
+                    <a href="plus.php?Line=<?=$i;?>"><i class="update fa fa-plus"></i></a><br>
+                    <h4>รวมทั้งสิ้น <?=number_format($Total,2);?> บาท</h4></center>
+                  </div>
+                </div>
+              </div>
+
           <?php
               }
             }
@@ -125,7 +135,7 @@ $objQuery = mysqli_query($conn,$strSQL)  or die(mysqli_error($conn));
             if($SumTotal <= 0){
           ?>
           <br><h2>คุณยังไม่มีสินค้าในตะกร้า</h2>
-            <i class="fas fa-cart-plus"></i><br>
+            <i class="fas fa-cart-plus" id="addcart"></i><br>
           <?php 
            }
            ?>
@@ -150,21 +160,12 @@ $objQuery = mysqli_query($conn,$strSQL)  or die(mysqli_error($conn));
               <?php
                 mysqli_close($conn);
               ?>
-            
       </center>
     </div>
-
-<!-- popup part -->
-          <div class="popup" id="popup">
-            <div class="popup-inner">
-                <center><h1>แบบฟอร์มกรอกรายละเอียดลูกค้า</h1></center>
-              <a class="popup__close" href="#">X</a>
-            </div>
-          </div>
+    <section class="cl-bg padding-l-vtc" id="sec2">
+      <div class="cont padding-s"></div>
+    </section>
   
-<section class="cl-bg padding-l-vtc" id="sec2">
-  <div class="cont padding-s"></div>
-</section>
 <!-- footer part -->
   <section>
     <footer id="footer" class="bg-ci2 t-center">

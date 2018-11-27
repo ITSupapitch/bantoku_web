@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$conn = mysqli_connect("localhost","root","","bantoku");
+$conn = mysqli_connect("localhost","root","root","bantoku");
 
   $Total = 0;
   $SumTotal = 0;

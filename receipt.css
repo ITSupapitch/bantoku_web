@@ -27,6 +27,7 @@ table{
     font-family: 'Itim', cursive;
     background-color: #fff1d7;
     padding: 0px;
+    height: 470px;
     width: 50%;
     padding: 10px;
 
@@ -115,4 +116,27 @@ footer{
   font-size: 0.7em;
   font-family: 'Fredoka One', cursive;
   border-top: 2px solid white;
+}
+
+
+/*for tablet*/
+@media only screen and (max-width: 768px) {
+  .box_scroll{
+    width: 80%;
+    height: 450px;
+  }
+  .font_thank {
+    font-size: 20px;
+  }
+}
+
+/*/*for mobile*/
+@media only screen and (max-width: 425px) {
+  .box_scroll{
+    width: 80%;
+    height: 450px;
+  }
+  .font_thank {
+    font-size: 16px;
+  }
 }

@@ -132,6 +132,12 @@ footer{
   .parallax{
     min-height: 60vw;
   }
+  inner{
+    width: 85%;
+    margin-bottom: 10px; 
+    margin-right: 0px;
+    margin-left: 50px;
+  }
   
 
 /*for mobile*/
@@ -151,5 +157,11 @@ footer{
   }
   .parallax{
     min-height: 114vw;
+  }
+  inner{
+    width: 85%;
+    margin-bottom: 10px; 
+    margin-right: 0px;
+    margin-left: 27px;
   }
 }

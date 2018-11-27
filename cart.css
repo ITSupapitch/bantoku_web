@@ -93,10 +93,20 @@ font-family: 'Fredoka One', cursive;
   padding: 3em;
   color: #fff;
 }
-#delete{
+.delete{
+  background-color: #e2525c;
+  width: 150px;
   color: black;
   text-decoration: none;
-  size: 2em;
+  size: 3em;
+}
+.delet:hover{
+  background-color: #e2525c;
+  opacity: 0.6;
+}
+
+.txtnot_have{
+  font-size: 35px;
 }
 
 h3{
@@ -121,7 +131,7 @@ h3{
   padding: 10px;
   margin-top: 20px;
   color: #624329;
-  display: inline-block;
+  display: inline;
 }
 
 #pic_cart {
@@ -130,16 +140,9 @@ h3{
 }
 
 
-/*Popuo Part*/
-/*.container {
-  background-color: #9191E9;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100px;
-  height: 200px;
-}*/
-
+#txt_amount{
+  font-size: 20px;
+}
 .button {
   display: inline-block;
   border-radius: 4px;
@@ -272,3 +275,93 @@ footer{
   border-top: 2px solid white;
 }
 
+/*for tablet*/
+@media only screen and (max-width: 768px) {
+  div.console-container { 
+    font-size: 40px;
+  }
+  .btn_shop{
+    font-size: 1.5rem;
+    width: 60%
+  }
+  .parallax{
+    min-height: 60vw;
+  }
+  #addcart{
+    font-size: 3em;
+  }
+  .txtnot_have{
+    font-size: 30px;
+  }
+  .button{
+    font-size: 22px;
+    margin: 0;
+  }
+  .box_cart{
+    width: 70%;
+    margin-top: 0px;
+  }
+  .row{
+    flex-wrap: nowrap;
+  }
+
+  
+
+/*for mobile*/
+@media only screen and (max-width: 425px) {
+  div.console-container { 
+    font-size: 25px;
+  }
+  .cont{
+    padding: 0.5em;
+  }
+  .text_title{
+    font-size: 22px;
+  }
+  .btn_shop{
+        font-size: 1rem;
+        width: 80%;
+  }
+  .parallax{
+    min-height: 114vw;
+  }
+  #addcart{
+    font-size: 2em;
+    padding-top: 27px;
+    padding-bottom: 10px;
+  }
+  .txtnot_have{
+    font-size: 20px;
+  }
+  .button{
+    font-size: 16px;
+    margin: 5px;
+    width: 150px;
+  }
+  .txt_cart{
+    padding: 0px;
+    margin-top:0px; 
+  }
+  .box_cart{
+    width: 80%;
+    margin-top: 0px;
+  }
+  .update {
+    font-size: .8em;
+  }
+  h4{
+    font-size: 1.4rem;
+  }
+  h3{
+    font-size: 1.6rem;
+  }
+  #txt_amount{
+    font-size: 16px;
+  }
+  .row{
+    flex-wrap: nowrap;
+  }
+  h2{
+    font-size: 1.5rem;
+  }
+}

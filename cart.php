@@ -62,7 +62,7 @@ session_start();
 
 <!-- connection part -->
 <?php
-$conn = mysqli_connect("localhost","root","root","bantoku");
+$conn = mysqli_connect("localhost","root","","bantoku");
 $strSQL = "SELECT * FROM product";
 $objQuery = mysqli_query($conn,$strSQL)  or die(mysqli_error($conn));
 ?>
@@ -71,8 +71,8 @@ $objQuery = mysqli_query($conn,$strSQL)  or die(mysqli_error($conn));
     <div class="parallax"></div>
 
 <!-- topic part -->
-<section class="cl-bg padding-l-vtc" id="sec2">
-    <div class="cont padding-s"></div>
+<section class="cl-bg padding-m-vtc" id="sec2">
+  <div class="cont padding-s"></div>
 </section>
 
 <center><div class='console-container'>
@@ -116,13 +116,16 @@ $objQuery = mysqli_query($conn,$strSQL)  or die(mysqli_error($conn));
                   <div style="background-image: url('pic/<?=$objResult["Picture"];?>');" class="round bg-cover column1">
                   </div>
                   <div class="column2">
-                    <a href="delete.php?Line=<?=$i;?>" id="delete">x</a><br>
+                    
                     <center><h3><?=$objResult["ProductName"];?></h3>
                     <h4><?=$_SESSION["strQty"][$i];?> x <?=$objResult["Price"];?></h4>
                     <a href="reduce.php?Line=<?=$i;?>"><i class="update fa fa-minus"></i></a>
-                    <font size="5em"><?=$_SESSION["strQty"][$i];?></font>
+                    <font size="4em"><?=$_SESSION["strQty"][$i];?></font>
                     <a href="plus.php?Line=<?=$i;?>"><i class="update fa fa-plus"></i></a><br>
-                    <h4>รวมทั้งสิ้น <?=number_format($Total,2);?> บาท</h4></center>
+                    <font id="txt_amount">รวมทั้งสิ้น <?=number_format($Total,2);?> บาท</font><br>
+                    <a href="delete.php?Line=<?=$i;?>"><button class="round delete">ลบเมนู</button></a><br>
+                    </center>
+
                   </div>
                 </div>
               </div>
@@ -134,7 +137,7 @@ $objQuery = mysqli_query($conn,$strSQL)  or die(mysqli_error($conn));
           <?php
             if($SumTotal <= 0){
           ?>
-          <br><h2>คุณยังไม่มีสินค้าในตะกร้า</h2>
+          <br><font class="txtnot_have">คุณยังไม่มีสินค้าในตะกร้า</font><br>
             <i class="fa fa-shopping-basket" id="addcart"></i>
             <i class="fa fa-plus" id="addcart"></i><br>
           <?php 

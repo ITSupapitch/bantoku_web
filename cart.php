@@ -16,6 +16,7 @@ session_start();
 
     <!-- cart -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
@@ -173,7 +174,8 @@ $objQuery = mysqli_query($conn,$strSQL)  or die(mysqli_error($conn));
 <!-- footer part -->
   <section>
     <footer id="footer" class="bg-ci2 t-center">
-        <br><br><p>Tel : +66(0) 2365 6999 Ext : 3462
+        <br><br><i class="far fa-heart"></i> &nbsp; Dev.faeng & kram &nbsp; <i class="far fa-heart"></i>
+        <br><p>Tel : +66(0) 2365 6999 Ext : 3462
         <br>Mobile : +66(O)61-624-9799</p>
         <a href="https://www.facebook.com/breadtalkthai/" target="_blank"><img src="pic/fb.png" class="social" width="50px" height="50px"></a>
         <a href="https://www.instagram.com/breadtalk_thailand/" target="_blank"><img src="pic/ig.png" class="social" width="50px" height="50px"></a>
